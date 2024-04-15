@@ -6,7 +6,7 @@ describe('Approve Pengajuan Cabang', () => {
     cy.visit('https://mpower-dev.mandalafinance.com/signin')
     cy.get('#signin_nokar').type('0000031')
     cy.get('#signin_password').type('Mfin!123')
-    //cy.screenshot("Login Page")
+    cy.screenshot("Login Page")
     cy.get('#signin_button').click()
     cy.wait(4000)
     cy.get('.pl-1').click()
